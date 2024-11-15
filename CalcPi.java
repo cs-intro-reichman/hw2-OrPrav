@@ -16,13 +16,14 @@ public class CalcPi {
 		approximated= approximated*4;
 			if (input !=0){
 				System.out.println("pi according to Java: " + Math.PI);
-				System.out.println("pi, approximated: " + approximated);
+				System.out.println("pi, approximated:     " + approximated);
 				} 
 				else{
 				System.out.println("pi according to Java: " + Math.PI);
 				System.out.println("the input is 0");
 				}
-		
+				//Expected:%0Api according to Java: 3.141592653589793%0Api, approximated:     3.1414926535900345%0A
+				//Actual:%0Api according to Java: 3.141592653589793%0Api, approximated: 3.1414926535900345
 
 	}
 }
