@@ -6,7 +6,8 @@ public class Cheers {
 
                 for(int i=0 ; i < letters.length() ; i++ ){
                         char s = letters.charAt(i);
-                        if (s =='A' || s =='E' || s =='F' || s =='H' || s =='I' || s =='L' || s =='M' || s =='N' || s =='O' || s ==  'R'|| s =='S' || s =='X'){
+                        if (s =='A' || s =='E' || s =='F' || s =='H' || s =='I' || s =='L' || s =='M' || s =='N' || s =='O' || s ==  'R'|| s =='S' || s =='X' ||
+                        s =='a' || s =='e' || s =='f' || s =='h' || s =='i' || s =='l' || s =='m' || s =='n' || s =='o' || s ==  'r'|| s =='s' || s =='x'){
                         System.out.println("Give me an " + s + ": " + s + "!");  
                         }else{
                         System.out.println("Give me a " + s + ": " + s + "!");  
