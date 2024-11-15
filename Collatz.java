@@ -41,11 +41,12 @@ public class Collatz {
 			line ++;
 			newSeed = line;
 			}
-			System.out.println("Every one of the first " + seed  + "hailstone sequences reached 1.");
+			System.out.println("Every one of the first " + seed  + " hailstone sequences reached 1.");
 		}
 		if(mod.equals("c") || mod.equals("C")) {
 		System.out.println("Every one of the first " + seed +  " hailstone sequences reached 1.");
 		}
-		
+	
+
 	}
 }
