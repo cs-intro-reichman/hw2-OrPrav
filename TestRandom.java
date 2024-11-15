@@ -20,7 +20,7 @@ public  class  TestRandom {
 
 		if(biger == 0 || smaller == 0){
 		}else{
-			double ratio =  biger/smaller;
+			double ratio =  biger/smaller; // try agin this cul
 			System.out.println("Ratio: " + ratio );
 		}
 }
