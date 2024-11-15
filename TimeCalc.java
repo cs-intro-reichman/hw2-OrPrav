@@ -2,7 +2,7 @@ public class TimeCalc {
     public static void main(String[] args) {
         String time = args[0];
         int minutesToAdd = Integer.parseInt(args[1]);
-       
+        
         int hours = (time.charAt(0) - '0') * 10 + (time.charAt(1) - '0');
         int minutes = (time.charAt(3) - '0') * 10 + (time.charAt(4) - '0');
 
