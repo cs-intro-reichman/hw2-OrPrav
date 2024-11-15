@@ -3,24 +3,25 @@ public class Cheers {
         public static void main(String[] args) {
                 String cheerWord = args[0];
                 int repeat = Integer.parseInt(args[1]);
-                String letters = "AEFHILMNORSXaefhilmnorsx";
+                String letters = "AEFHILMNORSX";
                 String allUeerWord = "";
 
                 for(int i=0 ; i < cheerWord.length() ; i++ ){
-                        int s = cheerWord.indexOf(cheerWord.charAt(i)); // the index of the letter I'm checking
-                        char c = Character.toUpperCase(cheerWord.charAt(i)); // the uppercase of the letter I'm changing
-                        allUeerWord = allUeerWord + c;
+                       // int s = Integer.parseInt(cheerWord.charAt(i));
+                        //cheerWord.indexOf(cheerWord.charAt(i)); // the index of the letter I'm checking
+                        char currentChar = Character.toUpperCase(cheerWord.charAt(i)); // the uppercase of the letter I'm changing
+                        allUeerWord = allUeerWord + currentChar;
                         boolean check = false;
-
+                        
                         for(int j=0 ; j< 12 ; j++){
-                            if (s == letters.indexOf(letters.charAt(j))) {
-                                System.out.println("Give me an " + c + ": " + c + "!");  
+                            if (currentChar == letters.charAt(j)) {
+                                System.out.println("Give me an " + currentChar + ": " + currentChar + "!");  
                                 check = true; // this letter is getting an
                                 break;
                             }
                         }   
                         if(!check){
-                                System.out.println("Give me a " + s + ": " + s + "!");
+                                System.out.println("Give me a " + currentChar + ": " + currentChar + "!");
                         }                         
                 }
 
@@ -31,6 +32,8 @@ public class Cheers {
                 for(int i=0; i< repeat ; i++ ){
                         System.out.println(allUeerWord + "!!!");
                 }
+               // Expected:%0AGive me an E: E!%0AGive me an X: X!%0AGive me a  C: C!%0AGive me an E: E!%0AGive me an L: L!%0AWhat does that spell?%0AEXCEL!!!%0AEXCEL!!!%0A
+                ///Actual:%0AGive me an E: E!%0AGive me an X: X!%0AGive me an C: C!%0AGive me an E: E!%0AGive me an L: L!%0AWhat does that spell?%0AEXCEL!!!%0AEXCEL!!!
         
         }
 }
